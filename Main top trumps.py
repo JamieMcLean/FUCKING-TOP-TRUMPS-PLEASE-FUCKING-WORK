@@ -3,22 +3,22 @@ import time
 Game = True
 
 def gameMenu():
-    ans=True
-    while ans:
-        print(" 1.Play The Game \n 2.Instructions \n 3.Exit/Quit")
-        
-        ans=input("What would you like to do? ")
-        if ans=="1":
-            name = input("\n What is your name? ")
-            print("Hello ", name, ". Let's play Top Trumps!")
-            game()
+     ans=True
+     while ans:
+         print(" 1.Play The Game \n 2.Instructions \n 3.Exit/Quit")
+         
+         ans=input("What would you like to do? ")
+         if ans=="1":
+             name = input("\n What is your name? ")
+             print("Hello ", name, ". Let's play Top Trumps!")
+             game()
         elif ans=="2":
              print("\n Okay then. ")
              instructions()
              askQuestion = input("do you want to play the game now?")
              if askQuestion == 'yes':
-                  print("Okay. Let's play!")
-                  game()
+                 print("Okay. Let's play!")
+                 game()
         elif ans=="3":
              print("\n Goodbye") 
              ans = False
